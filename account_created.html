@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+        <meta charset="utf-8">
+        <title>CoffeeBreak</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon_transp.png">
+        <style>
+            html, body {
+                height: 100%;
+				margin: 0px;
+				
+				
+				
+				
+				
+            }
+            .container {
+                display: flex;
+				flex-direction: column;
+                
+                width: 100%;
+                border: 1px solid black;
+                padding: 21px;
+                background-image: url("coffee_time.jpg");
+                height: 100%
+				
+				
+				
+            }
+            .text {
+                text-align: center;
+                color: #ffffff;
+				font-size: 200px;
+				font-family: Georgia, serif;
+				font-style: italic;
+
+            }
+			
+			
+			input[type=text]:focus, input[type=password]:focus{
+				background-color: white;
+				outline: 5px solid #1062e8;
+	
+	
+	
+			}
+	
+	
+	
+
+
+            .buttonLogin {
+
+			  
+			  margin-left: 45%;
+			  margin-bottom: 40px;
+
+			}
+			
+			
+			.RegAndNewUser {
+               display: flex;
+               flex-direction: column;
+			   margin-left: auto;
+			   margin-right: auto;
+			   margin-bottom: 20px;
+
+			}
+			.buttonHover:hover {
+                background-color: red;
+                -webkit-transition-duration: 0.5s;
+				transition-duration: 0.5s;
+                color: white;
+				
+            }
+            .loginInputs {
+                display: flex;
+                margin-left:auto;
+                margin-right:auto;
+                flex-direction: column;
+				margin-bottom:20px;
+            }
+            .input1, .input2 {
+                display: flex;
+                justify-content: space-between;
+				font-size: 25px;
+				color:white; 
+				margin-right:90px;
+				margin-bottom:40px;
+				font-weight: bold;
+			
+				
+            }
+            .newUser {
+                margin-right: 80px; 
+				margin-left: 100px;
+				font-size: 20px;
+				color:white; 
+				font-weight: bold;
+				background-color: purple;
+				
+				
+				
+            }
+
+
+        </style>
+    </head>
+    <body>
+	
+		<form action="/login.php" method="post">
+        <div class="container">
+		
+		
+            <div class="text">
+                <p style="margin-top: 30px; text-shadow: 5px 5px #ff0000;">CoffeeBreak</p>
+			</div>	
+			
+			<div class="error">
+				<span style="color:white; font-size:35px; margin-left:45%; background-color: purple; margin-left:45%;">Account Created</span><br>
+				
+			</div>
+				
+				
+				
+            
+			
+				
+                <div class="loginInputs">
+				
+                    <div class="input1" >
+                        <span style=" background-color: purple;" >Username:</span>
+                        <input type="text" name="username" style="width: 300px; height: 30px; font-size: 20px;" required >
+                    </div>
+					
+                    <div class="input2">
+                        <span style=" background-color: purple;"  >Password :</span>
+                        <input type="password" name="password" style="width: 300px; height: 30px; font-size: 20px;" required >
+                    </div>
+                </div>
+				
+				
+				<div class="buttonLogin">
+                    <button class="buttonHover" type="submit" style="height:40px; width:200px; font-size: 18px; border-radius: 25px; border: 5px solid red; ">Είσοδος</button>
+                </div>
+				
+				
+				
+                <div class="RegAndNewUser">
+				
+                    <div class="buttonReg">
+                       <button class="buttonHover" onclick="location.href='reg_form.html' " type="button" style="height:35px; width:100px; font-size: 16px; border-radius: 25px; border: 5px solid red; margin-left: 120px; ">Εγγραφή</button> 
+                    </div>
+					
+					
+                    <div class="newUser">
+                        Νέος Χρήστης?
+                    </div>
+                </div>
+				
+
+
+            </form>
+        </div>
+    </body>
+</html>

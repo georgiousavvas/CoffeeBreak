@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>CoffeeBreak</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_transp.png">
+    <style>
+	
+	html, body {
+		background-image: url("coffee_time.jpg");
+        height: 100%;
+        margin: 0;
+        
+      }
+	  
+	  .logout_btn {
+		position:absolute; 
+		top:0; 
+		right:0;
+	  
+	  }
+	  
+	  .buttonHover1:hover {
+        background-color: red;
+        -webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+        color: white;
+        }
+		
+		.home_btn {
+		position:absolute; 
+		bottom: 10%;
+		left: 42%;
+	  }
+		
+		.buttonHover:hover {
+        background-color: red;
+        -webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+        color: white;
+      }
+	  
+	
+	  </style>
+  </head>
+  <body>
+  
+  <p align="center" style="font-family: Georgia,serif; font-size:120px; font-style: italic; color:white;  margin-bottom: 20px; margin-top: 0px; text-shadow: 5px 5px #ff0000;">CoffeeBreak</p>
+  
+  <div class="done">
+  <p style="font-family: Georgia,serif; font-size:40px; color:white;  text-shadow: 0 0 10px #FF0000;  margin-top:150px; margin-left:450px;">Η παραγγελία σας καταχωρήθηκε</p>
+  <p style="font-family: Georgia,serif; font-size:40px; color:white; text-shadow: 0 0 10px #FF0000;   margin-left:430px;">Ευχαριστούμε για την προτίμηση σας</p>
+
+  </div>
+  
+  <form action="/logout.php">
+	<div class="logout_btn">
+        <button class="buttonHover1" type="submit" style="height:40px; width:200px; font-size: 15px; border-radius: 25px; border: 5px solid red;">Αποσύνδεση</button>
+	</div>
+	</form>	
+	
+	<div class="home_btn">
+        <button class="buttonHover" type="button" Onclick="location.href='index.html' " style="height:160px; width:160px; font-size: 20px; border-radius: 20%; border: 5px solid red;">Αρχική σελίδα</button>
+	</div>
+	
+	
+    </body>
+</html>
